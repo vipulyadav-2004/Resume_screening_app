@@ -61,7 +61,7 @@
 
                 {% if results %}
                 <div class="results-table-wrap">
-                    <table class="table align-middle mb-0 results-table">
+                    <table class="table align-middle mb-0 results-table" style="color: #f8fafc;">
                         <thead>
                             <tr>
                                 <th>Rank</th>
@@ -72,13 +72,13 @@
                         <tbody>
                             {% for res in results %}
                             <tr>
-                                <td><span class="rank-pill">#{{ loop.index }}</span></td>
+                                <td><span class="rank-pill" style="color: #f8fafc;">#{{ loop.index }}</span></td>
                                 <td>
-                                    <div class="file-name">{{ res.filename }}</div>
+                                    <div class="file-name" style="color: #f8fafc;">{{ res.filename }}</div>
                                 </td>
                                 <td>
                                     <div class="score-block">
-                                        <div class="score-value">{{ res.score }}%</div>
+                                        <div class="score-value" style="color: #f8fafc;">{{ res.score }}%</div>
                                         <div class="progress score-track" role="progressbar" aria-label="Match score for {{ res.filename }}" aria-valuenow="{{ res.score }}" aria-valuemin="0" aria-valuemax="100">
                                             <div class="progress-bar score-fill" style="width: {{ res.score }}%;"></div>
                                         </div>

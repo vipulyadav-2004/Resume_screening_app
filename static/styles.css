@@ -248,15 +248,17 @@ body {
 
 .results-table thead th {
   background: rgba(255, 255, 255, 0.04);
-  color: #dbeafe;
+  color: #f8fafc;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   padding: 16px 18px;
+  font-weight: 700;
 }
 
 .results-table tbody td {
   background: rgba(255, 255, 255, 0.02);
   border-color: rgba(255, 255, 255, 0.06);
   padding: 18px;
+  color: #e2e8f0;
 }
 
 .results-table tbody tr:hover td {
@@ -270,12 +272,14 @@ body {
   min-width: 54px;
   padding: 8px 12px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  font-weight: 700;
+  background: rgba(255, 255, 255, 0.12);
+  color: #f8fafc;
+  font-weight: 800;
 }
 
 .file-name {
-  font-weight: 600;
+  color: #f8fafc;
+  font-weight: 700;
   word-break: break-word;
 }
 
@@ -285,6 +289,7 @@ body {
 }
 
 .score-value {
+  color: #f8fafc;
   font-weight: 800;
   letter-spacing: 0.02em;
 }
@@ -309,6 +314,13 @@ body {
 .empty-state h3 {
   color: var(--text);
   margin-bottom: 8px;
+}
+
+.results-card p,
+.results-card small,
+.results-card span,
+.results-card div {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 992px) {
