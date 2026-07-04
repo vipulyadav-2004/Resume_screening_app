@@ -182,14 +182,39 @@ body {
   background: rgba(34, 197, 94, 0.16);
   color: var(--text);
   cursor: pointer;
+  font-weight: 600;
   transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .screening-form input[type="file"]::file-selector-button:hover,
 .screening-form input[type="file"]::file-selector-button:focus {
-  background: #86efac;
-  color: #0f172a;
+  background: #dbeafe !important;
+  color: #0f172a !important;
   box-shadow: 0 8px 18px rgba(34, 197, 94, 0.18);
+}
+
+.screening-form input[type="file"]::-webkit-file-upload-button {
+  border: 0;
+  margin-right: 12px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.16);
+  color: var(--text);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.screening-form input[type="file"]::-webkit-file-upload-button:hover,
+.screening-form input[type="file"]::-webkit-file-upload-button:focus {
+  background: #dbeafe !important;
+  color: #0f172a !important;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.18);
+}
+
+.screening-form input[type="file"]:hover,
+.screening-form input[type="file"]:focus {
+  color: #0f172a;
 }
 
 .form-hint {
