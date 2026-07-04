@@ -182,6 +182,14 @@ body {
   background: rgba(34, 197, 94, 0.16);
   color: var(--text);
   cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.screening-form input[type="file"]::file-selector-button:hover,
+.screening-form input[type="file"]::file-selector-button:focus {
+  background: #86efac;
+  color: #0f172a;
+  box-shadow: 0 8px 18px rgba(34, 197, 94, 0.18);
 }
 
 .form-hint {
@@ -201,7 +209,7 @@ body {
 .btn-primary:hover,
 .btn-primary:focus {
   background: linear-gradient(135deg, #34d399, #15803d);
-  color: #0b1020;
+ 
 }
 
 .results-table-wrap {
