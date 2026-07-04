@@ -11,8 +11,12 @@ class AdvancedSemanticMatcher:
     def __init__(self):
         self.model = None
         if SentenceTransformer is not None:
-            print("📥 Initializing Pre-trained Sentence-Transformer (all-MiniLM-L6-v2)...")
-            self.model = SentenceTransformer('all-MiniLM-L6-v2')
+            try:
+                print("📥 Initializing Pre-trained Sentence-Transformer (all-MiniLM-L6-v2)...")
+                self.model = SentenceTransformer('all-MiniLM-L6-v2')
+            except Exception as exc:
+                print(f"⚠️ Falling back to TF-IDF scoring because the transformer model could not be loaded: {exc}")
+                self.model = None
 
     def calculate_match_score(self , resume_text , job_description_text):
         """
